@@ -8,7 +8,7 @@ fig.subplots_adjust(wspace=0.4, hspace=0.4)
 
 # url koji sadrzi xml datoteku s mjerenjima:
 # naglasiti da treba odabrati xml file, ne json
-url = 'http://iszz.azo.hr/iskzl/rs/podatak/export/xml?postaja=274&polutant=95&tipPodatka=4&vrijemeOd=30.03.2023&vrijemeDo=13.04.2023'
+url = 'http://iszz.azo.hr/iskzl/rs/podatak/export/xml?postaja=160&tipPodatka=4&polutant=5&vrijemeOd=01.01.2017&vrijemeDo=31.12.2017'
 
 airQualityHR = urllib.request.urlopen(url).read()
 root = ET.fromstring(airQualityHR)
